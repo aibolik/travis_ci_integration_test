@@ -115,12 +115,10 @@ class TestCalculator(unittest.TestCase):
 
     def test_11(self):
         s = Stack()
-	s.push(1)
-	s.push(2)
-	s.push(3)
-	self.assertEqual(s.size(), 3)
-	
-
+        s.push(1)
+        s.push(2)
+        s.push(3)
+        self.assertEqual(s.size(), 3)
 
 if __name__ == '__main__':
     unittest.main()
