@@ -1,6 +1,7 @@
 import unittest
 
 from new_calculator import Calculator
+from new_calculator import Stack
 
 
 class TestCalculator(unittest.TestCase):
@@ -111,6 +112,14 @@ class TestCalculator(unittest.TestCase):
         c.press("2")
         c.press("=")
         self.assertEqual(c.display, "73")
+
+    def test_11(self):
+        s = Stack()
+	s.push(1)
+	s.push(2)
+	s.push(3)
+	self.assertEqual(s.size(), 3)
+	
 
 
 if __name__ == '__main__':
